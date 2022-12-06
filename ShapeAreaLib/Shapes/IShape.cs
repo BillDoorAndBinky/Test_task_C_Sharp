@@ -1,7 +1,6 @@
-namespace ShapeAreaLib.Shapes
+namespace ShapeAreaLib.Shapes;
+
+public interface IShape
 {
-    public interface IShape
-    {
-        double GetArea();
-    }
+    double GetArea();
 }
