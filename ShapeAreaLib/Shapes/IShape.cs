@@ -1,6 +1,6 @@
 namespace ShapeAreaLib.Shapes
 {
-    public interface IHasArea
+    public interface IShape
     {
         double GetArea();
     }
