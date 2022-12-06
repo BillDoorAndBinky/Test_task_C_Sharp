@@ -1,5 +1,4 @@
 using ShapeAreaLib.Shapes.Circles;
-using ShapeAreaLib.Shapes.Triangles;
 using Xunit;
 
 namespace ShapeAreaTest.Shapes;
@@ -39,13 +38,13 @@ public class CircleTest
     public void GetDiameter_Circle_ReturnsRealDiameter()
     {
         var circle = new Circle(0.5);
-        Assert.Equal(1,circle.Diameter);
+        Assert.Equal(1, circle.Diameter);
     }
 
     [Fact]
     public void CheckGetArea_OfTCircle_ReturnsRealArea()
     {
-        var circle = new Circle(0.3);
-        Assert.Equal(Math.PI*0.3*0.3, circle.GetArea());
+        var circle = new Circle(0.003);
+        Assert.Equal(Math.PI * 0.003 * 0.003, circle.GetArea());
     }
 }
