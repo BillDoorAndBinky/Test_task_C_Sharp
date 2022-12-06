@@ -59,7 +59,8 @@ namespace ShapeAreaLib.Shapes.Triangles
         {
             //Для вычисления используется формула Герона
             var s = (A + B + C) / 2;
-            return Math.Round(Math.Sqrt(s * (s - A) * (s - B) * (s - C)));
+            //Округляем значение до 15 знаков после запятой
+            return Math.Round(Math.Sqrt(s * (s - A) * (s - B) * (s - C)),15);
         }
     }
 }
